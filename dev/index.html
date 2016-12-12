@@ -12,7 +12,7 @@
         <p>{{ message }}</p>
     </div>
     <div id="app-2">
-        <span v-bind:title="message">
+        <span :title="message">
             Hover your mouse over me for a few seconds to see my dynamically bound title!
         </span>
     </div>
@@ -28,7 +28,7 @@
     </div>
     <div id="app-5">
         <p>{{ message }}</p>
-        <button v-on:click="reverseMessage">Reverse Message</button>
+        <button @click="reverseMessage">Reverse Message</button>
     </div>
     <div id="app-6">
         <p>{{ message }}</p>
@@ -44,6 +44,69 @@
             <todo-item v-for="todo in todos" v-bind:todo="todo"></todo-item>
         </ol>
     </div>
+    <div id="example">
+        <p>Original message: "{{ message }}"</p>
+        <p>Computed reversed message: "{{ reversedMessage }}"</p>
+    </div>
+
+    <div id="demo" :class="classObject" :style="styleObject">
+        {{ fullName }}
+        <template v-if="ok">
+          <h1>Title</h1>
+          <p>Paragraph 1</p>
+          <p>Paragraph 2</p>
+        </template>
+        <div v-if="Math.random() > 0.5">
+            Now you see me
+        </div>
+        <div v-else>
+            Now you don't
+        </div>
+        <h1 v-show="ok">Hello!</h1>
+    </div>
+
+    <ul id="example-1">
+        <li v-for="item in items">
+            {{ item.message }}
+        </li>
+    </ul>
+
+    <ul id="example-2">
+        <li v-for="(item, index) in items">
+            {{ parentMessage }} - {{ index }} - {{ item.message }}
+        </li>
+    </ul>
+
+    <ul id="repeat-object" class="demo">
+        <li v-for="(value, key, index) in object">
+            {{ index }}. {{ key }} : {{ value }}
+        </li>
+    </ul>
+
+    <div id="todo-list-example">
+        <input v-model="newTodoText" v-on:keyup.enter="addNewTodo" placeholder="Add a todo">
+        <ul>
+            <todo-item v-for="(todo, index) in todos" v-bind:title="todo" v-on:remove="todos.splice(index, 1)"></todo-item>
+            <!-- <li is="todo-item" v-for="(todo, index) in todos" v-bind:title="todo" v-on:remove="todos.splice(index, 1)"></li> -->
+        </ul>
+    </div>
+
+    <div id="example-prop">
+        <div>
+            <input v-model.lazy="parentMsg">
+            <br>
+            <child v-bind:my-message="parentMsg"></child>
+        </div>
+    </div>
+
+    <div id="once">
+        <span v-once>This will never change: {{ msg }}</span>
+    </div>
+
+    <div id="vhtml">
+        <div v-html="rawHtml"></div>
+    </div>
+
 
     <script src="script/index.js"></script>
 </body>
