@@ -3,7 +3,7 @@ const config = require('./webpack.base.config');
 config.devtool = 'eval-source-map';
 
 config.devServer = {
-    contentBase: './dev',
+    // contentBase: './dev',
     historyApiFallback: true,
 };
 

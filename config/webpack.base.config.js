@@ -1,7 +1,8 @@
 const webpack = require('webpack');
+const postcssConfig = require('./postcss.config');
 
 module.exports = {
-    entry: './dev/index.js',
+    entry: './dev/main.js',
     output: {
         path: './dist',
         publicPath: 'dist/',
@@ -13,7 +14,8 @@ module.exports = {
         },
     },
     module: {
-        loaders: [{
+        loaders: [
+            {
                 test: /\.js$/,
                 loader: 'babel',
                 exclude: /node_modules/,
@@ -24,6 +26,7 @@ module.exports = {
             },
         ],
     },
+    postcss: postcssConfig,
     vue: {
         loaders: {
             js: 'babel',
