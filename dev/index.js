@@ -1,9 +1,10 @@
 import Vue from 'vue';
 import 'babel-polyfill';
+import App from './components/app.vue';
 
 new Vue({
     el: '#app',
-    data: {
-        message: "Hello Vue"
-    }
-})
+    components: {
+        App,
+    },
+});
