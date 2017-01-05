@@ -1,21 +1,33 @@
 <template>
-    <div>
-        <Test></Test>
-        <div class="message">{{ msg }}</div>
+    <div class="wrapper">
+        <!-- <nav-menu-component /> -->
+        <!-- <edit-component /> -->
+        <!-- <shopping-cart-component /> -->
+        <!-- <search-component /> -->
+        <filter-component />
     </div>
 </template>
 
 <script>
-import Test from './components/Test.vue';
+import NavMenuComponent from './components/NavMenuComponent.vue';
+import EditComponent from './components/EditComponent.vue';
+import ShoppingCartComponent from './components/ShoppingCartComponent.vue';
+import SearchComponent from './components/SearchComponent.vue';
+import FilterComponent from './components/FilterComponent.vue';
 
 export default {
   data () {
     return {
-      msg: 'Hello from vue-loader!'
+      msg: 'Hello World!'
     }
   },
   components: {
-    Test
+    NavMenuComponent,
+    EditComponent,
+    ShoppingCartComponent,
+    SearchComponent,
+    FilterComponent,
   }
 }
 </script>
+<style lang="scss" rel="stylesheet/scss" src="./style/style.scss"></style>

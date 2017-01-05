@@ -24,12 +24,17 @@ module.exports = {
                 test: /\.vue$/,
                 loader: 'vue',
             },
+            {
+                test: /\.s[a|c]ss$/,
+                loader: 'style!css!sass',
+            },
         ],
     },
     postcss: postcssConfig,
     vue: {
         loaders: {
             js: 'babel',
+            scss: 'style!css!sass',
         },
     },
 };
