@@ -41,7 +41,7 @@ export default {
     }
 }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
     section.edit-component {
         height: 300px;
         position: relative;

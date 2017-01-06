@@ -10,7 +10,7 @@ module.exports = {
     },
     resolve: {
         alias: {
-            'vue$': 'vue/dist/vue.common.js',
+            'vue$': 'vue/dist/vue.js',
         },
     },
     module: {
@@ -23,6 +23,9 @@ module.exports = {
             {
                 test: /\.vue$/,
                 loader: 'vue',
+                options: {
+                    postcss: postcssConfig.plugins,
+                },
             },
             {
                 test: /\.s[a|c]ss$/,

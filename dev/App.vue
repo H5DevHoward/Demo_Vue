@@ -4,7 +4,8 @@
         <!-- <edit-component /> -->
         <!-- <shopping-cart-component /> -->
         <!-- <search-component /> -->
-        <filter-component />
+        <!-- <filter-component /> -->
+        <router-test />
     </div>
 </template>
 
@@ -14,6 +15,7 @@ import EditComponent from './components/EditComponent.vue';
 import ShoppingCartComponent from './components/ShoppingCartComponent.vue';
 import SearchComponent from './components/SearchComponent.vue';
 import FilterComponent from './components/FilterComponent.vue';
+import RouterTest from './components/RouterTest.vue';
 
 export default {
   data () {
@@ -27,6 +29,7 @@ export default {
     ShoppingCartComponent,
     SearchComponent,
     FilterComponent,
+    RouterTest,
   }
 }
 </script>
