@@ -11,13 +11,13 @@
                     {{ item.name }}
                 </span>
             </nav>
-            <div class="show-item">
+            <transition-group class="show-item" tag="div" name="fade">
                 <img
                     v-for="(item, index) in showItems"
                     :key="index"
                     :src="item.src"
                 />
-            </div>
+            </transition-group>
         </div>
     </section>
 </template>
@@ -171,17 +171,29 @@ export default {
     data () {
         return {
             navItems: NAV,
-            showItems: _.shuffle(IMAGES),
+            filterOption: NAV[0].types,
         }
     },
     methods: {
         toggle(types) {
-            this.showItems = _.shuffle(IMAGES.filter(item => !item.type.map(item => types.includes(item)).includes(false)));
+            this.filterOption = types;
+        }
+    },
+    computed: {
+        showItems() {
+            return _.shuffle(IMAGES.filter(item => !item.type.map(item => this.filterOption.includes(item)).includes(false)));
         }
     },
 }
 </script>
 <style lang="scss" scoped>
+    .fade-enter-active, .fade-leave-active {
+        transition: opacity .5s
+    }
+    .fade-enter, .fade-leave-active {
+        opacity: 0
+    }
+
     nav {
         width: 600px;
         position: relative;
