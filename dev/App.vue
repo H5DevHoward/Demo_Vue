@@ -10,11 +10,6 @@
 </template>
 
 <script>
-import NavMenuComponent from './components/NavMenuComponent.vue';
-import EditComponent from './components/EditComponent.vue';
-import ShoppingCartComponent from './components/ShoppingCartComponent.vue';
-import SearchComponent from './components/SearchComponent.vue';
-import FilterComponent from './components/FilterComponent.vue';
 import RouterTest from './components/RouterTest.vue';
 
 export default {
@@ -24,11 +19,6 @@ export default {
     }
   },
   components: {
-    NavMenuComponent,
-    EditComponent,
-    ShoppingCartComponent,
-    SearchComponent,
-    FilterComponent,
     RouterTest,
   }
 }
