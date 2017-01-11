@@ -13,14 +13,14 @@
 import RouterTest from './components/RouterTest.vue';
 
 export default {
-  data () {
-    return {
-      msg: 'Hello World!'
+    data () {
+        return {
+            msg: 'Hello World!'
+        }
+    },
+    components: {
+        RouterTest,
     }
-  },
-  components: {
-    RouterTest,
-  }
 }
 </script>
 <style lang="scss" rel="stylesheet/scss" src="./style/style.scss"></style>
