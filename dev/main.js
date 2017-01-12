@@ -1,13 +1,12 @@
+import 'babel-polyfill';
 import Vue from 'vue';
-import Vuex from 'vuex';
-
 import router from './router';
-import App from './App.vue';
-
-Vue.use(Vuex);
+import store from './store';
+import App from './components/App.vue';
 
 const app = new Vue({
     router,
+    store,
     components: {
         App,
     },

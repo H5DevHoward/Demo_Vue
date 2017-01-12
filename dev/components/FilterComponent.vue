@@ -27,111 +27,111 @@ import _ from 'lodash';
 
 const IMAGES = [
     {
-        src: './assets/image/red01.jpg',
+        src: '../assets/image/red01.jpg',
         type: ['A'],
     },
     {
-        src: './assets/image/red02.jpg',
+        src: '../assets/image/red02.jpg',
         type: ['A'],
     },
     {
-        src: './assets/image/red03.jpg',
+        src: '../assets/image/red03.jpg',
         type: ['A'],
     },
     {
-        src: './assets/image/red04.jpg',
+        src: '../assets/image/red04.jpg',
         type: ['A'],
     },
     {
-        src: './assets/image/red05.jpg',
+        src: '../assets/image/red05.jpg',
         type: ['A'],
     },
     {
-        src: './assets/image/red06.jpg',
+        src: '../assets/image/red06.jpg',
         type: ['A'],
     },
     {
-        src: './assets/image/red07.jpg',
+        src: '../assets/image/red07.jpg',
         type: ['A'],
     },
     {
-        src: './assets/image/green01.jpg',
+        src: '../assets/image/green01.jpg',
         type: ['B'],
     },
     {
-        src: './assets/image/green02.jpg',
+        src: '../assets/image/green02.jpg',
         type: ['B'],
     },
     {
-        src: './assets/image/green03.jpg',
+        src: '../assets/image/green03.jpg',
         type: ['B'],
     },
     {
-        src: './assets/image/green04.jpg',
+        src: '../assets/image/green04.jpg',
         type: ['B'],
     },
     {
-        src: './assets/image/green05.jpg',
+        src: '../assets/image/green05.jpg',
         type: ['B'],
     },
     {
-        src: './assets/image/green06.jpg',
+        src: '../assets/image/green06.jpg',
         type: ['B'],
     },
     {
-        src: './assets/image/green07.jpg',
+        src: '../assets/image/green07.jpg',
         type: ['B'],
     },
     {
-        src: './assets/image/green08.jpg',
+        src: '../assets/image/green08.jpg',
         type: ['B'],
     },
     {
-        src: './assets/image/green09.jpg',
+        src: '../assets/image/green09.jpg',
         type: ['B'],
     },
     {
-        src: './assets/image/blue01.jpg',
+        src: '../assets/image/blue01.jpg',
         type: ['C'],
     },
     {
-        src: './assets/image/blue02.jpg',
+        src: '../assets/image/blue02.jpg',
         type: ['C'],
     },
     {
-        src: './assets/image/blue03.jpg',
+        src: '../assets/image/blue03.jpg',
         type: ['C'],
     },
     {
-        src: './assets/image/blue04.jpg',
+        src: '../assets/image/blue04.jpg',
         type: ['C'],
     },
     {
-        src: './assets/image/blue05.jpg',
+        src: '../assets/image/blue05.jpg',
         type: ['C'],
     },
     {
-        src: './assets/image/blue06.jpg',
+        src: '../assets/image/blue06.jpg',
         type: ['C'],
     },
     {
-        src: './assets/image/blue07.jpg',
+        src: '../assets/image/blue07.jpg',
         type: ['C'],
     },
     {
-        src: './assets/image/blue08.jpg',
+        src: '../assets/image/blue08.jpg',
         type: ['C'],
     },
     {
-        src: './assets/image/blue09.jpg',
+        src: '../assets/image/blue09.jpg',
         type: ['C'],
     },
     {
-        src: './assets/image/blue10.jpg',
+        src: '../assets/image/blue10.jpg',
         type: ['C'],
     },
     {
-        src: './assets/image/blue11.jpg',
+        src: '../assets/image/blue11.jpg',
         type: ['C'],
     },
 ];

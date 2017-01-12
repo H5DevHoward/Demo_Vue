@@ -23,27 +23,27 @@
 <script>
 const DATA = [
     {
-        thumb: './assets/image/thumb01.jpg',
+        thumb: '../assets/image/thumb01.jpg',
         copy: 'What You Need To Know About CSS Variables',
     },
     {
-        thumb: './assets/image/thumb02.jpg',
+        thumb: '../assets/image/thumb02.jpg',
         copy: 'Freebie: 4 Great Looking Pricing Tables',
     },
     {
-        thumb: './assets/image/thumb03.jpg',
+        thumb: '../assets/image/thumb03.jpg',
         copy: '20 Interesting JavaScript and CSS Libraries for February 2016',
     },
     {
-        thumb: './assets/image/thumb04.png',
+        thumb: '../assets/image/thumb04.png',
         copy: 'Quick Tip: The Easiest Way To Make Responsive Headers',
     },
     {
-        thumb: './assets/image/thumb05.png',
+        thumb: '../assets/image/thumb05.png',
         copy: 'Learn SQL In 20 Minutes',
     },
     {
-        thumb: './assets/image/thumb06.png',
+        thumb: '../assets/image/thumb06.png',
         copy: 'Creating Your First Desktop App With HTML, JS and Electron',
     },
 ];

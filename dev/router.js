@@ -17,7 +17,6 @@ const SearchComponent = resolve => require(['./components/SearchComponent.vue'],
 const FilterComponent = resolve => require(['./components/FilterComponent.vue'], resolve);
 const Foo = resolve => require.ensure([], () => resolve(require('./components/Foo.vue')), 'group-foo');
 const Bar = resolve => require.ensure([], () => resolve(require('./components/Bar.vue')), 'group-foo');
-const VuexTest = resolve => require(['./components/VuexTest.vue'], resolve);
 
 Vue.use(VueRouter);
 
@@ -97,13 +96,6 @@ const routes = [
                 component: Bar,
             },
         ],
-    },
-    {
-        path: '/vuex',
-        component: VuexTest,
-        meta: {
-            scrollToTop: true,
-        },
     },
 ];
 

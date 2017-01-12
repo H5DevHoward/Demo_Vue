@@ -1,6 +1,6 @@
 <template>
     <div id="vuex-test">
-    <p>{{ count }}</p>
+    <p>{{ todoCount }}</p>
         <p>
             <button @click="increment">+</button>
             <button @click="decrement">-</button>
@@ -9,32 +9,16 @@
 </template>
 
 <script>
-import Vuex from 'vuex';
-
-const store = new Vuex.Store({
-    state: {
-        count: 0,
-    },
-    mutations: {
-    	increment: state => state.count++,
-        decrement: state => state.count--,
-    },
-});
+import { mapGetters, mapActions } from 'vuex';
 
 export default {
-    computed: {
-        count () {
-            return store.state.count;
-        }
-    },
-    methods: {
-        increment () {
-            store.commit('increment');
-        },
-        decrement () {
-            store.commit('decrement');
-        },
-    }
+    computed: mapGetters([
+        'todoCount',
+    ]),
+    methods: mapActions([
+        'increment',
+        'decrement',
+    ]),
 }
 </script>
 
