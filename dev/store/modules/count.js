@@ -12,10 +12,10 @@ const getters = {
 
 // actions
 const actions = {
-    increment: ({commit}) => {
+    increment ({commit}) {
         commit(types.INCREMENT);
     },
-    decrement: ({commit}) => {
+    decrement ({commit}) {
         commit(types.DECREMENT);
     },
 };
