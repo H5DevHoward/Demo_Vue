@@ -66,9 +66,9 @@ export default {
     section{
         .bar {
             background-color: #5c9bb7;
-            background-image: -webkit-linear-gradient(top, #5c9bb7, #5392ad);
-            background-image: -moz-linear-gradient(top, #5c9bb7, #5392ad);
-            background-image: linear-gradient(top, #5c9bb7, #5392ad);
+            // background-image: -webkit-linear-gradient(top, #5c9bb7, #5392ad);
+            // background-image: -moz-linear-gradient(top, #5c9bb7, #5392ad);
+            // background-image: linear-gradient(top, #5c9bb7, #5392ad);
             box-shadow: 0 1px 1px #ccc;
             border-radius: 2px;
             width: 400px;
@@ -91,9 +91,9 @@ export default {
                 outline: none;
                 text-indent: 40px;
             }
-            }
+        }
 
-            ul {
+        ul {
             list-style: none;
             width: 428px;
             margin: 0 auto;

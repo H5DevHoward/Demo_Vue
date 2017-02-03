@@ -29,7 +29,7 @@ module.exports = {
             },
             {
                 test: /\.s[a|c]ss$/,
-                loader: 'style!css!sass',
+                loader: 'style!css?sourceMap!postcss!sass',
             },
         ],
     },
@@ -37,7 +37,8 @@ module.exports = {
     vue: {
         loaders: {
             js: 'babel',
-            scss: 'style!css!sass',
+            scss: 'style!css!postcss!sass',
         },
+        postcss: postcssConfig.plugins,
     },
 };

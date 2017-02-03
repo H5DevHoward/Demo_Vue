@@ -69,9 +69,9 @@ export default {
 
         .tooltip {
             background-color: #5c9bb7;
-            background-image: -webkit-linear-gradient(top, #5c9bb7, #5392ad);
-            background-image: -moz-linear-gradient(top, #5c9bb7, #5392ad);
-            background-image: linear-gradient(top, #5c9bb7, #5392ad);
+            // background-image: -webkit-linear-gradient(top, #5c9bb7, #5392ad);
+            // background-image: -moz-linear-gradient(top, #5c9bb7, #5392ad);
+            // background-image: linear-gradient(top, #5c9bb7, #5392ad);
             box-shadow: 0 1px 1px #ccc;
             border-radius: 3px;
             width: 290px;
