@@ -5,12 +5,11 @@ module.exports = {
     entry: './dev/main.js',
     output: {
         path: './dist',
-        publicPath: 'dist/',
-        filename: 'build.js',
+        filename: '[name].js',
     },
     resolve: {
         alias: {
-            'vue$': 'vue/dist/vue.js',
+            vue$: 'vue/dist/vue.js',
         },
     },
     module: {

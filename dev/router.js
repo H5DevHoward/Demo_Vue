@@ -1,22 +1,22 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
-// import NavMenuComponent from './components/NavMenuComponent.vue';
-// import EditComponent from './components/EditComponent.vue';
-// import ShoppingCartComponent from './components/ShoppingCartComponent.vue';
-// import SearchComponent from './components/SearchComponent.vue';
-// import FilterComponent from './components/FilterComponent.vue';
-// import Foo from './components/Foo.vue';
-// import Bar from './components/Bar.vue';
+import NavMenuComponent from './component/NavMenuComponent.vue';
+import EditComponent from './component/EditComponent.vue';
+import ShoppingCartComponent from './component/ShoppingCartComponent.vue';
+import SearchComponent from './component/SearchComponent.vue';
+import FilterComponent from './component/FilterComponent.vue';
+import Foo from './component/Foo.vue';
+import Bar from './component/Bar.vue';
 
 
-const NavMenuComponent = resolve => require(['./components/NavMenuComponent.vue'], resolve);
-const EditComponent = resolve => require(['./components/EditComponent.vue'], resolve);
-const ShoppingCartComponent = resolve => require(['./components/ShoppingCartComponent.vue'], resolve);
-const SearchComponent = resolve => require(['./components/SearchComponent.vue'], resolve);
-const FilterComponent = resolve => require(['./components/FilterComponent.vue'], resolve);
-const Foo = resolve => require.ensure([], () => resolve(require('./components/Foo.vue')), 'group-foo');
-const Bar = resolve => require.ensure([], () => resolve(require('./components/Bar.vue')), 'group-foo');
+// const NavMenuComponent = resolve => require(['./component/NavMenuComponent.vue'], resolve);
+// const EditComponent = resolve => require(['./component/EditComponent.vue'], resolve);
+// const ShoppingCartComponent = resolve => require(['./component/ShoppingCartComponent.vue'], resolve);
+// const SearchComponent = resolve => require(['./component/SearchComponent.vue'], resolve);
+// const FilterComponent = resolve => require(['./component/FilterComponent.vue'], resolve);
+// const Foo = resolve => require.ensure([], () => resolve(require('./component/Foo.vue')), 'group-foo');
+// const Bar = resolve => require.ensure([], () => resolve(require('./component/Bar.vue')), 'group-foo');
 
 Vue.use(VueRouter);
 
@@ -100,7 +100,7 @@ const routes = [
 ];
 
 const router = new VueRouter({
-    mode: 'history',
+    // mode: 'history',
     base: __dirname,
     scrollBehavior,
     routes,

@@ -9,7 +9,7 @@
             <router-link to="/filter" replace>Go to Filter</router-link>
             <router-link :to="{ name: 'foo', params: { id: 123 }}">Go to Foo</router-link>
         </p>
-        <transition name="fade">
+        <transition name="fade" mode="out-in">
             <router-view></router-view>
         </transition>
     </div>

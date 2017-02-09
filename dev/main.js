@@ -2,7 +2,7 @@ import 'babel-polyfill';
 import Vue from 'vue';
 import router from './router';
 import store from './store';
-import App from './components/App.vue';
+import App from './component/App.vue';
 
 const app = new Vue({
     router,
